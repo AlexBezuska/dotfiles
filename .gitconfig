@@ -1,0 +1,14 @@
+[color]
+	ui = true
+[user]
+	name = Alex Bezuska
+	email = abezuska@gmail.com
+[push]
+	default = simple
+[core]
+	autocrlf = false
+	safecrlf = true
+	excludesfile = /Users/abezuska/.gitignore
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
