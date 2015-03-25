@@ -1,3 +1,14 @@
-export PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# Setup color Variables
+#############################
+BLACK="\[\033[0;30m\]"
+RED="\[\033[0;31m\]"
+GREEN="\[\033[0;32m\]"
+YELLOW="\[\033[0;33m\]"
+BLUE="\[\033[0;34m\]"
+PURPLE="\[\033[0;35m\]"
+CYAN="\[\033[0;36m\]"
+WHITE="\[\033[0;37m\]"
+export PS1="$CYAN[\t]$WHITE \u@\h\[\033[00m\]:$YELLOW\w\[\033[00m\] \\$ "  
+
 
 export PATH=${PATH}:~/android-sdk/platform-tools
