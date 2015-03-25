@@ -5,3 +5,4 @@ cp ./.bashrc ~/.bashrc
 cp ./.gitconfig ~/.gitconfig
 cp ./.gitignore ~/.gitignore
 cp ./.vimrc ~/.vimrc
+cp ./divvyprefs ~/Library/Preferences/com.mizage.Divvy.plist
