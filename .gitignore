@@ -2,3 +2,4 @@
 .DS_Store
 Thumbs.db
 ._.dropbox.attr
+node_modules
