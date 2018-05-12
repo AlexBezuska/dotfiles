@@ -41,3 +41,11 @@ When Unity asks for the parth to the
 
 #### Adobe Creative Cloud
 (Mac) http://ccmdl.adobe.com/AdobeProducts/KCCC/1/osx10/ACCCx4_5_0_331.dmg
+
+
+#### Atom
+https://atom.io/download/mac
+
+
+#### Spotify
+https://www.spotify.com/us/download/mac/
