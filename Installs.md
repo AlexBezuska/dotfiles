@@ -37,3 +37,7 @@ http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.h
 
 Open Android Studio and it will guide you through downlaoding the default packages including the Android SDK
 When Unity asks for the parth to the
+
+
+#### Adobe Creative Cloud
+(Mac) http://ccmdl.adobe.com/AdobeProducts/KCCC/1/osx10/ACCCx4_5_0_331.dmg
