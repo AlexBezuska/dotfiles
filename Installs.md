@@ -52,3 +52,9 @@ https://www.spotify.com/us/download/mac/
 
 #### GIPHY Capture
 https://itunes.apple.com/us/app/giphy-capture.-the-gif-maker/id668208984?mt=12
+
+#### Audacity
+
+
+#### ffmpeg
+`brew install ffmpeg`
