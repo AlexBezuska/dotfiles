@@ -61,13 +61,13 @@
   
   The problem: Turns out that`PATH/TO/Unity/Hub/Editor/2019.1.5f1/modules.json` has an error in where it puts the MacStandaloneSupport files.
   
-  *Tip: It helped me to run this contents of this json file through [JSONLint](https://jsonlint.com/) to un-minify it making it eisier to read.*
+  *Tip: It helped me to run this contents of this json file through [JSONLint](https://jsonlint.com/) to un-minify it making it easier to read.*
   
   1. Change the mac-mono destination should be:
   ```
   "destination": "{UNITY_PATH}/Editor/Data/PlaybackEngines/MacStandaloneSupport",
   ```
-  also change selected to false to retrigger the need to download the build support module to the right destination:
+  Also be sure to change `selected` to `false` - this will re-trigger the need for Unity Hub to download the build support module to the right destination:
   ```
   "selected": false
   ```
