@@ -1,4 +1,4 @@
-#Ubuntu 19.04, Unity 2019.1.5f1
+# Ubuntu 19.04, Unity 2019.1.5f1
 
 ## Just annoyances
 
@@ -49,18 +49,22 @@
     - Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
 
 ![](https://i.imgur.com/wiZXjcb.png)
+
 ![](https://i.imgur.com/FzFh3Cg.png)
+
 ![](https://i.imgur.com/EwjyLO2.png)
 
   *The Fix*
-  (be sure to changtere `2019.1.5f1` to your version of Unity)
+  
+  (be sure to change `2019.1.5f1` to your version of Unity)
+  
   Turns out that`PATH/TO/Unity/Hub/Editor/2019.1.5f1/modules.json` has an error, the mac-mono destination should be:
   ```
   "destination": "{UNITY_PATH}/Editor/Data/PlaybackEngines/MacStandaloneSupport",
   ```
   also change selected to false to retrigger the need to download the build support module to the right destination:
   ```
-  "selected: false
+  "selected": false
   ```
   - Log out/in Linux for changes to take effect in Unity Hub
   - Open Unity hub and go to Installs, the apple icon for the version of Unity you want should be gone
