@@ -46,7 +46,8 @@
 
 ### BUG 2019-06-05
  *Can't create Mac builds*
-    - Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
+ 
+ Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
 
 ![](https://i.imgur.com/wiZXjcb.png)
 
@@ -54,11 +55,15 @@
 
 ![](https://i.imgur.com/EwjyLO2.png)
 
-  *The Fix*
+  **The Fix:**
   
   (be sure to change `2019.1.5f1` to your version of Unity)
   
-  Turns out that`PATH/TO/Unity/Hub/Editor/2019.1.5f1/modules.json` has an error, the mac-mono destination should be:
+  The problem: Turns out that`PATH/TO/Unity/Hub/Editor/2019.1.5f1/modules.json` has an error in where it puts the MacStandaloneSupport files.
+  
+  *Tip: It helped me to run this contents of this json file through [JSONLint](https://jsonlint.com/) to un-minify it making it eisier to read.*
+  
+  1. Change the mac-mono destination should be:
   ```
   "destination": "{UNITY_PATH}/Editor/Data/PlaybackEngines/MacStandaloneSupport",
   ```
@@ -66,6 +71,7 @@
   ```
   "selected": false
   ```
-  - Log out/in Linux for changes to take effect in Unity Hub
-  - Open Unity hub and go to Installs, the apple icon for the version of Unity you want should be gone
-  - Click the menu on that version of unity > Add Modules, check Mac Build Support(Mono) and click done
+
+  2. Log out/in Linux for changes to take effect in Unity Hub
+  3. Open Unity hub and go to Installs, the apple icon for the version of Unity you want should be gone
+  4. Click the menu on that version of unity > Add Modules, check Mac Build Support(Mono) and click done
