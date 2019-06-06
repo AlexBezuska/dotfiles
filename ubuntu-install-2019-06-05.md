@@ -4,6 +4,11 @@
 - Intel Core i7-8700K Coffee Lake 6-Core 3.7 GHz
 - GIGABYTE Z370N WIFI (rev. 1.0) Mini ITX Motherboard
 - EVGA GeForce GTX 1060 6GB SSC GAMING 6GB
+  - Installation:
+    - Open Software updater > Additional Drivers > use the latestr proprietary Nvidia driver available
+
+![](images/Screenshot from 2019-06-05 23-01-17.png)
+
 - SILVERSTONE SST-SX500-G 500W SFX Power Supply
 - Crucial Ballistix Sport LT 16GB (2 x 8GB) DDR4 2400 (PC4 19200)
 - SAMSUNG 960 EVO M.2 500GB NVMe SSD MZ-V6E500BW
@@ -40,6 +45,7 @@ sudo modprobe wl
 ### Installed via AppImage
   `.AppImage` files require right clicking the icon > Properties > Permissions then enable `Execute` for owner
     - [Unity Hub for Linux](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.AppImage)
+      - `sudo apt install libgtk2.0-0:i386`
 
 ---
 
@@ -68,7 +74,9 @@ sudo modprobe wl
   - (needed to change existing hotkeys for dock using dconf-editor and there were a lot of them!)
 - Dock tweaks
   - Multi monitor, custom app open indicators, etc all tweakable via dconf-editor
-
+- Private key
+    -`ssh-keygen -t rsa`
+- .gitconfig (file in this repo)
 ---
 
 ## Frustrations so far
