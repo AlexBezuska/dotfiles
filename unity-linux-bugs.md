@@ -48,10 +48,12 @@
  *Can't create Mac builds*
     - Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
 
-  ![](images/unity-2019-mac.png)
+![](https://i.imgur.com/wiZXjcb.png)
+![](https://i.imgur.com/FzFh3Cg.png)
+![](https://i.imgur.com/EwjyLO2.png)
 
   *The Fix*
-  (be sure to change `2019.1.5f1` to your version of Unity)
+  (be sure to changtere `2019.1.5f1` to your version of Unity)
   Turns out that`PATH/TO/Unity/Hub/Editor/2019.1.5f1/modules.json` has an error, the mac-mono destination should be:
   ```
   "destination": "{UNITY_PATH}/Editor/Data/PlaybackEngines/MacStandaloneSupport",
