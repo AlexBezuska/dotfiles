@@ -7,7 +7,7 @@
   - Installation:
     - Open Software updater > Additional Drivers > use the latestr proprietary Nvidia driver available
 
-![](https://raw.githubusercontent.com/AlexBezuska/dotfiles/master/images/Screenshot%20from%202019-06-05%2023-01-17.png)
+![](images/nvidia-ubuntu.png)
 
 - SILVERSTONE SST-SX500-G 500W SFX Power Supply
 - Crucial Ballistix Sport LT 16GB (2 x 8GB) DDR4 2400 (PC4 19200)
