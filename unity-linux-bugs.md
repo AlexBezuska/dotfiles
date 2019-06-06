@@ -16,10 +16,6 @@
   - Temporary Fix: Pulling window down and maximizing it again each time Unity is opened.
 
 
-4. Can't create Mac builds
-  - Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
-
-![](images/unity-2019-mac.png)
 
 
 5. Package 'java6-runtime' has no installation candidate
@@ -30,7 +26,10 @@
 
 
 ## Fixed Bugs
-  Title: Unidentifiable errors in console (Ubuntu 19.04 libssl / .net issue)
+
+### BUG 2019-06-05
+*Unidentifiable errors in console (Ubuntu 19.04 libssl / .net issue)*
+  Also posted this on the form: https://forum.unity.com/threads/unidentifiable-errors-in-unity-console-on-ubuntu-19-04-fixed.690757/
 
   Bug present in Unity 2019.1.5f1 and 2019.3.0a4
   5 Blank errors  in console, game will not run.
@@ -43,3 +42,24 @@
   https://packages.ubuntu.com/xenial/amd64/libssl1.0.0/download
 
   ![](images/unitybug-errors.png)
+
+
+### BUG 2019-06-05
+ *Can't create Mac builds*
+    - Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
+
+  ![](images/unity-2019-mac.png)
+
+  *The Fix*
+  (be sure to change `2019.1.5f1` to your version of Unity)
+  Turns out that`PATH/TO/Unity/Hub/Editor/2019.1.5f1/modules.json` has an error, the mac-mono destination should be:
+  ```
+  "destination": "{UNITY_PATH}/Editor/Data/PlaybackEngines/MacStandaloneSupport",
+  ```
+  also change selected to false to retrigger the need to download the build support module to the right destination:
+  ```
+  "selected: false
+  ```
+  - Log out/in Linux for changes to take effect in Unity Hub
+  - Open Unity hub and go to Installs, the apple icon for the version of Unity you want should be gone
+  - Click the menu on that version of unity > Add Modules, check Mac Build Support(Mono) and click done
