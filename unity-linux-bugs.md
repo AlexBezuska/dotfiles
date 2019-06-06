@@ -3,7 +3,7 @@
 ## Breaking Bugs
 - Random errors with no descriptions preventing playing game
 
-![](images/Screenshot from 2019-06-05 22-31-27.png)
+![](https://raw.githubusercontent.com/AlexBezuska/dotfiles/master/images/Screenshot from 2019-06-05 22-31-27.png)
 
 
 
@@ -22,4 +22,4 @@
 
 4. Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
 
-![](images/Screenshot from 2019-06-05 22-33-32.png)
+![](https://raw.githubusercontent.com/AlexBezuska/dotfiles/master/images/Screenshot from 2019-06-05 22-33-32.png)
