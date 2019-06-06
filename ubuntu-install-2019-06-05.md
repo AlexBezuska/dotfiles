@@ -26,6 +26,8 @@ sudo modprobe wl
 
 ## Software
 
+Ubuntu 19.04
+
 ### Installed via Ubuntu Software
 - Firefox
 - Slack
@@ -46,6 +48,12 @@ sudo modprobe wl
   `.AppImage` files require right clicking the icon > Properties > Permissions then enable `Execute` for owner
     - [Unity Hub for Linux](https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.AppImage)
       - `sudo apt install libgtk2.0-0:i386`
+
+### Installed other ways
+
+- Apple TV Areial screensaver
+  - https://github.com/graysky2/xscreensaver-aerial
+
 
 ---
 
@@ -74,7 +82,7 @@ sudo modprobe wl
   - (needed to change existing hotkeys for dock using dconf-editor and there were a lot of them!)
 - Dock tweaks
   - Multi monitor, custom app open indicators, etc all tweakable via dconf-editor
-- Private key
+- Generate private key
     -`ssh-keygen -t rsa`
 - .gitconfig (file in this repo)
 ---

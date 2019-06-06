@@ -3,3 +3,4 @@
 Thumbs.db
 ._.dropbox.attr
 node_modules
+*.log

@@ -1,14 +1,4 @@
-#Ubuntu 19, Unity 2019.1.5f1
-
-## Breaking Bugs
-1. Unidentifiable errors in console
-  - No descriptions
-  - Preventing playing game
-
-![](images/unitybug-errors.png)
-
-
-
+#Ubuntu 19.04, Unity 2019.1.5f1
 
 ## Just annoyances
 
@@ -30,3 +20,26 @@
   - Mac module installed by does not show up in Build Settings > PC, Mac & Linux Standalone, Cannot create mac builds.
 
 ![](images/unity-2019-mac.png)
+
+
+5. Package 'java6-runtime' has no installation candidate
+-  `sudo apt install java6-runtime`
+
+6. Unable to locate package java7-jdk
+  - `sudo apt install java7-jdk`
+
+
+## Fixed Bugs
+  Title: Unidentifiable errors in console (Ubuntu 19.04 libssl / .net issue)
+
+  Bug present in Unity 2019.1.5f1 and 2019.3.0a4
+  5 Blank errors  in console, game will not run.
+  We read through the Editor Log and found this:
+  ```No usable version of the libssl was found
+  /home/abezuska/Unity/Hub/Editor/2019.1.5f1/Editor/Data/Tools/RoslynScripts/unity_csc.sh: line 64: 28227 Aborted                 (core dumped) "/home/abezuska/Unity/Hub/Editor/2019.1.5f1/Editor/Data/Tools/RoslynScripts/../../Tools/Roslyn/csc" /shared /noconfig @Temp/UnityTempFile-c8355884da1220cdd9d43fb9e8e24eb0
+  ```
+  Apparently Ubuntu 19 uses libssl1.1 and .net requires libssl1.0
+  installing libssl1.0 from this source fixed the issue for me:
+  https://packages.ubuntu.com/xenial/amd64/libssl1.0.0/download
+
+  ![](images/unitybug-errors.png)
