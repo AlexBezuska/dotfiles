@@ -40,6 +40,10 @@ Ubuntu 19.04
 
 ### Installed via Apt
 - dconf-editor
+- curl
+- nodejs
+  - `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
+  - `sudo apt install nodejs`
 
 ### Installed via .deb
   - [Atom](https://atom.io/download/deb)
@@ -85,6 +89,8 @@ Ubuntu 19.04
 - Generate private key
     -`ssh-keygen -t rsa`
 - .gitconfig (file in this repo)
+- Natural scrolling
+  - System Settings → Mouse & Touchpad → Natural Scrolling
 ---
 
 ## Frustrations so far
