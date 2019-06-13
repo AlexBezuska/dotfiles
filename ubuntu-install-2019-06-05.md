@@ -39,6 +39,7 @@ Ubuntu 19.04
 - Pall Color Picker
 - Krita
 - obs
+- R-Studio
 
 ### Installed via Apt
 
